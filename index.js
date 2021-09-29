@@ -16,6 +16,9 @@ let xhr = new XMLHttpRequest();
 
 xhr.open('GET', link, true);
 
+xhr.getResponseHeader('content-type', 'application/json')
+
+
 xhr.onprogress = function () {
     // console.log("on progress");
 }
