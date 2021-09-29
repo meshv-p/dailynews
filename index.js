@@ -1,7 +1,7 @@
 // console.log('3684e6479e9a4ac29fd01258fe97dc0e');
 
 //link = https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3684e6479e9a4ac29fd01258fe97dc0e
-let api = '3684e6479e9a4ac29fd01258fe97dc0e';
+let api = 'e217c1e1f57e46289989fd685a5f108b';
 let link = `https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=${api}`;
 let title, content;
 let spinner = document.getElementById('spinner');
