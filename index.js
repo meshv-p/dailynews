@@ -2,7 +2,8 @@
 
 //link = https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3684e6479e9a4ac29fd01258fe97dc0e
 let api = 'e217c1e1f57e46289989fd685a5f108b';
-let link = `https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=${api}`;
+let source = 'bbc-news'
+let link = `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${api}`;
 let title, content;
 let spinner = document.getElementById('spinner');
 let spin = `<div class="spinner-border text-primary" role="status">
@@ -15,9 +16,6 @@ let spin = `<div class="spinner-border text-primary" role="status">
 let xhr = new XMLHttpRequest();
 
 xhr.open('GET', link, true);
-
-xhr.getResponseHeader('content-type', 'application/json')
-
 
 xhr.onprogress = function () {
     // console.log("on progress");
@@ -55,7 +53,7 @@ xhr.onload = function () {
             <div id="collapse${index}" class="accordion-collapse collapse " aria-labelledby="heading${index}" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>
-                ${e['content'].slice(0,196)} ... <a href="${e['url']}" class="text-muted" target="_blank">Read more</a>
+                ${e['content'].slice(0,196)} ... <a href="${e['url']}" target="_blank">Read more</a>
                 </strong>
                 
                 </div>
