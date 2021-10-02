@@ -2,7 +2,7 @@
 //maan - 3684e6479e9a4ac29fd01258fe97dc0e
 //meshv - e217c1e1f57e46289989fd685a5f108b
 //link = https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=3684e6479e9a4ac29fd01258fe97dc0e
-let api = 'e217c1e1f57e46289989fd685a5f108b';
+// let api = 'e217c1e1f57e46289989fd685a5f108b';
 let source = 'bbc-news'
 let category = 'sport';
 let pgno = 1;
